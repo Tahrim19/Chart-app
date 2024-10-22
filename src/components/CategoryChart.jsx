@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { PieChart, Pie, Tooltip, Cell, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Tooltip, Cell, ResponsiveContainer, Legend } from 'recharts';
 
 export default function CategoryChart() {
     const [chartData, setChartData] = useState([]); // Renamed to chartData
@@ -45,13 +45,12 @@ export default function CategoryChart() {
         <>
             <div>
                 <h3 className='product-heading'>PRODUCT CATEGORIES PIE CHART</h3>
-                <ResponsiveContainer width='95%' height={450}>
+                <ResponsiveContainer width='75%' height={450}>
                     <PieChart>
                         <Pie
                             data={chartData} 
                             cx="50%"
                             cy="50%"
-                            labelLine={false}
                             outerRadius={200}
                             fill="#8884d8"
                             dataKey="value"
@@ -61,7 +60,8 @@ export default function CategoryChart() {
                             ))}
                         </Pie>
                         <Tooltip />
-                    </PieChart>
+                        <Legend layout="vertical" align="right" verticalAlign="middle"/>              
+                        </PieChart>
                 </ResponsiveContainer>
             </div>
         </>
