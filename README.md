@@ -8,7 +8,11 @@ This project demonstrates data visualization using **Recharts** 📈 with data f
 - 📱 **Responsive** design for seamless use across devices
 
 ## 🚀 Demo
-(Click here to see)[https://chart-app-wine.vercel.app/]
+[Click here to see](https://chart-app-wine.vercel.app/)
+
+## Documentation
+See the medium article for guide!
+[click to see](https://medium.com/@tarimbilal4/mastering-recharts-a-comprehensive-guide-to-creating-charts-in-reactjs-7f2ac21a1e77)
 
 ## 🔧 Installation
 1. Clone this repository:
